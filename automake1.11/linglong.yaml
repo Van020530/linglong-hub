@@ -1,0 +1,26 @@
+package:
+  id: automake1.11
+  name: automake-1.11
+  version: 1.11.0
+  kind: lib
+  description: |
+
+runtime:
+  id: org.deepin.Runtime
+  version: 20.5.0
+
+source:
+  kind: git
+  url: "https://github.com/deepin-community/automake1.11.git"
+  commit: fbb5a0607dce387bb3d5c9f786f355a6dc022aab
+
+build:
+  kind: manual
+  manual:
+    configure: |
+      ./bootstrap
+      ./configure
+    build: |
+      make
+    install: |
+      make install
