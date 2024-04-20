@@ -1,0 +1,19 @@
+package:
+  id: arpackpp
+  name: arpackpp
+  version: 2.4.0
+  kind: lib
+  description: |
+     Arpack++ with patches (C++ interface to ARPACK)
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: git
+  url: https://github.com/m-reuter/arpackpp.git
+  commit: d1bec4e1297265ab58d4900a9d52d6bbfef1c19a
+
+build:
+  kind: cmake
